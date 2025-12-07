@@ -44,7 +44,7 @@ toc = true
 comments = true  # {true, false}; sets global enabling of comments by default
 giscus_repo = "tudor96stani/trdb-blog"
 giscus_repo_id = "R_kgDOQkJdmQ"
-giscus_data_category_id = "Blog comments"
+giscus_data_category_id = "General"
 # giscus_data_category = "General" # Default to "General"
 taxonomies = [
     # You can enable/disable RSS
