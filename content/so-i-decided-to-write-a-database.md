@@ -21,6 +21,6 @@ I use various resources when designing the system: lectures I find on YouTube fr
 
 This database project will never see the light of day as an actual product to be used in real life - I don’t see the point in trying to create a competitor for existing solutions with decades of experience on the market (especially as a side project done by one person after work). It’s designed for my own growth and passion.
 
-I do welcome any kind of feedback from anyone reading this - whether I’ve made a stupid choice regarding the design/behavior of the database engine, or if I’ve written some junk piece of Rust code that can be improved.
+I do welcome any kind of feedback from anyone reading this - whether I’ve made a stupid choice regarding the design/behavior of the database engine, or if I’ve written some junk piece of Rust code that can be improved. Appreciation of anything that looks right is also more than welcome :D
 
 The repo with the Rust code can be found [here](https://github.com/tudor96stani/trdb). `cargo` generated docs can be found [here](https://tudor96stani.github.io/trdb/trdb/index.html)

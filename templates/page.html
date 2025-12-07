@@ -2,15 +2,15 @@
 {% import "macros/post_macros.html" as post_macros %}
 
 {% block title %}
-    {% if page.title %}
-    {{ page.title }}
-    {% else %}
-    {{ super() }}
-    {% endif %}
+{% if page.title %}
+{{ page.title }}
+{% else %}
+{{ super() }}
+{% endif %}
 {% endblock title %}
 
 {% block header %}
-    {{ super() }}
+{{ super() }}
 {% endblock header %}
 
 {% block main %}
@@ -23,43 +23,42 @@
 
     <article itemprop="articleBody">
         {% if page.summary and page.summary != page.content %}
-            {{ page.summary | safe }}
+        {{ page.summary | safe }}
 
-            {% if page.extra.toc | default(value=false) and page.toc %}
-              {% include "partials/toc.html" %}
-            {% endif %}
+        {% if page.extra.toc | default(value=false) and page.toc %}
+        {% include "partials/toc.html" %}
+        {% endif %}
 
-            <!-- Render the rest of the content after removing the summary portion -->
-            {{ page.content | replace(from=page.summary, to="") | safe }}
+        <!-- Render the rest of the content after removing the summary portion -->
+        {{ page.content | replace(from=page.summary, to="") | safe }}
 
         {% else %}
-            <!-- If no summary separate from content, just render content -->
-            {{ page.content | safe }}
+        <!-- If no summary separate from content, just render content -->
+        {{ page.content | safe }}
         {% endif %}
     </article>
 
     <nav class="post-nav flex justify-between mt-12 text-lg">
-    {% if page.lower %}
-    <a class="text-primary" href="{{ page.lower.permalink }}">
-        ← {{ page.lower.title }}
-    </a>
-    {% endif %}
+        {% if page.lower %}
+        <a class="text-primary" href="{{ page.lower.permalink }}">
+            ← {{ page.lower.title }}
+        </a>
+        {% endif %}
 
-    {% if page.higher %}
-    <a class="text-primary ml-auto" href="{{ page.higher.permalink }}">
-        {{ page.higher.title }} →
-    </a>
-    {% endif %}
-</nav>
-
+        {% if page.higher %}
+        <a class="text-primary ml-auto" href="{{ page.higher.permalink }}">
+            {{ page.higher.title }} →
+        </a>
+        {% endif %}
+    </nav>
 
     <!-- Comment section -->
     {% block comments %}
-      {% if config.extra.comments | default(value="false") %}
-        {% if page.extra.comments | default(value="true")%}
-          {% include "_giscus_script.html" %}
-        {% endif %}
-      {% endif %}
+    {% if config.extra.comments | default(value="false") %}
+    {% if page.extra.comments | default(value="true")%}
+    {% include "_giscus_script.html" %}
+    {% endif %}
+    {% endif %}
     {% endblock comments %}
 
 

@@ -9,6 +9,6 @@ While I don’t think Java was the wrong choice (nor do I regret it), I felt the
 
 Then I started looking into Rust, which felt like a good middle ground between what I knew and where I wanted to get. Manually allocating memory without the fear of a `SEGFAULT` sounded like a good segue into this type of programming. Knowing that the borrow checker sits beside me and does not allow me to make blatant mistakes sounded like a nice to have safety net.
 
-After a crash course of going through the official Rust book, doing the Rustlings exercises, and several small test apps, I decided the best way to actually improve my Rust skills was to get to work and hope I'll pick up stuff along the way.
+After a crash course of going through the official [Rust book](https://rust-book.cs.brown.edu/), doing the [Rustlings exercises](https://rustlings.rust-lang.org/), and several small test apps, I decided the best way to actually improve my Rust skills was to get to work and hope I'll pick up stuff along the way.
 
 I’m putting all of this out here partly to keep track of what I’m doing, and partly because I’m sure someone out there will know better and point things out - whether that’s spotting issues I missed or suggesting better ways of implementing things.
