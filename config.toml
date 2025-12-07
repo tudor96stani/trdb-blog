@@ -1,0 +1,53 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "radion"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "css"  # Required for class-based highlighting
+
+# Specify theme(s) for dark and light modes
+highlight_themes_css = [
+  { theme = "one-dark", filename = "syntax/syntax-theme-dark.css" },
+  { theme = "gruvbox-dark", filename = "syntax/syntax-theme-light.css" },
+]
+
+[extra]
+radion_title = "Rusting a database"
+
+author = "Tudor Stanila"
+github = "https://github.com/tudor96stani"
+
+radion_menu = [
+    { url = "$BASE_URL", name = "Home" },
+    #{ url = "$BASE_URL/categories", name = "Categories" },
+    #{ url = "$BASE_URL/tags", name = "Tags" }
+]
+
+codeblock = true
+
+#enable_search = true
+
+theme = "toggle" # options: {light, dark, auto, toggle}
+
+toc = true
+
+comments = false  # {true, false}; sets global enabling of comments by default
+giscus_repo = "FILL ME IN"
+giscus_repo_id = "FILL ME IN"
+giscus_data_category_id = "FILL ME IN"
+# giscus_data_category = "General" # Default to "General"
+taxonomies = [
+    # You can enable/disable RSS
+    { name = "categories", feed = true },
+    { name = "tags", feed = true },
+]
