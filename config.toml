@@ -25,7 +25,7 @@ highlight_themes_css = [
 radion_title = "Rusting a database"
 
 author = "Tudor Stanila"
-github = "https://github.com/tudor96stani"
+github = "https://github.com/tudor96stani/trdb"
 
 radion_menu = [
     { url = "$BASE_URL", name = "Home" },
