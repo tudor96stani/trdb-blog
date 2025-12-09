@@ -7,7 +7,22 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-theme = "radion"
+theme = "tabi"
+title = "Rusting a database"
+
+taxonomies = [{name = "tags", feed = true}]
+
+author = "Tudor Stanila"
+
+generate_feeds = true
+
+[search]
+index_format = "elasticlunr_json" # Or the less efficient "elasticlunr_javascript".
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+
 
 [markdown]
 # Whether to do syntax highlighting
@@ -21,28 +36,68 @@ highlight_themes_css = [
   { theme = "gruvbox-dark", filename = "syntax/syntax-theme-light.css" },
 ]
 
+
 [extra]
 radion_title = "Rusting a database"
 
-author = "Tudor Stanila"
 github = "https://github.com/tudor96stani/trdb"
-
-radion_menu = [
-    { url = "$BASE_URL", name = "Home" },
-    #{ url = "$BASE_URL/categories", name = "Categories" },
-    #{ url = "$BASE_URL/tags", name = "Tags" }
-]
 
 codeblock = true
 
-#enable_search = true
+enable_search = true
 
-theme = "toggle" # options: {light, dark, auto, toggle}
+theme_switcher = true
 
 toc = true
 
-comments = false  # {true, false}; sets global enabling of comments by default
-giscus_repo = "tudor96stani/trdb-blog"
-giscus_repo_id = "R_kgDOQkJdmQ"
-giscus_data_category_id = "General"
-giscus_data_category = "General" # Default to "General"
+show_previous_next_article_links = true
+invert_previous_next_article_links = true
+
+remote_repository_url = "https://github.com/tudor96stani/trdb-blog"
+remote_repository_git_platform = "auto"
+remote_repository_branch = "main"
+show_remote_changes = true
+show_remote_source = true
+
+
+menu = [
+    #{ name = "tags", url = "tags", trailing_slash = true },
+    { name = "about", url = "about", trailing_slash = true },
+    { name = "rss", url = "atom.xml", trailing_slash = false },
+    { name = "github", url = "https://github.com/tudor96stani/trdb", trailing_slash = false },
+]
+
+quick_navigation_buttons = true
+
+copy_button = true
+
+socials = [
+    { name = "github", url = "https://github.com/tudor96stani", icon = "github" },
+ #   { name = "soundcloud", url = "https://soundcloud.com/oskerwyld", icon = "soundcloud" },
+ #   { name = "instagram", url = "https://instagram.com/oskerwyld", icon = "instagram" },
+ #   { name = "youtube", url = "https://youtube.com/@oskerwyld", icon = "youtube" },
+ #   { name = "spotify", url = "https://open.spotify.com/artist/5Hv2bYBhMp1lUHFri06xkE", icon = "spotify" },
+]
+feed_icon = true
+show_author = true
+
+[extra.giscus]
+enabled_for_all_posts = true
+automatic_loading = true
+repo = "tudor96stani/trdb-blog"
+repo_id = "R_kgDOQkJdmQ"
+category = "General"
+category_id = "DIC_kwDOQkJdmc4Czf4m"
+mapping = "pathname"
+strict_title_matching = 0  # 1 to enable, 0 to disable.
+enable_reactions = 1  # 1 to enable, 0 to disable.
+comment_box_above_comments = true
+light_theme = "noborder_light"
+dark_theme = "noborder_dark"
+lang = ""  # Leave blank to match the page's language.
+lazy_loading = true
+
+[extra.analytics]
+service = "goatcounter"
+id = "tudor96stani"
+self_hosted_url = ""

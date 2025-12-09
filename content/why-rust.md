@@ -1,6 +1,7 @@
 +++
 title = "Why rust"
 date = 2025-12-07T10:00:00+01:00
+description = "Why I chose Rust for the rewrite of this project"
 +++
 
 Since I decided to rewrite everything from scratch, I also decided to pick a different language for the new version.
