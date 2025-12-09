@@ -59,6 +59,8 @@ remote_repository_branch = "main"
 show_remote_changes = true
 show_remote_source = true
 
+#favicon_emoji = "🦀"
+favicon = "img/crab.png"
 
 menu = [
     #{ name = "tags", url = "tags", trailing_slash = true },
