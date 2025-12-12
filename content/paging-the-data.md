@@ -23,7 +23,7 @@ The page abstraction is also essential for data structures like B-trees and for 
 As with many other areas and modules, the OS is the enemy of the engine, and the database will choose to implement its own mechanisms, rather than relying on the OS provided abstractions in order to be able to optimize and define its behavior exactly as it wants it.
 
 ## Slotted pages
-The most common implementation for this is called a **slotted page**. The reasoning behind this concept is explained in the [[Paging the data#Why slotted pages]] section - but first I will quickly go over the structure and the behavior of this kind of page by using my design as an example.
+The most common implementation for this is called a **slotted page**. The reasoning behind this concept is explained in the **Why slotted pages** section - but first I will quickly go over the structure and the behavior of this kind of page by using my design as an example.
 
 ### Structure and behavior
 I have configured a page to be 4KB in size - I have chosen this size mostly because it is more manageable to look through while debugging and because I do most of my work on a Macbook with an SSD that has a 4KB block size as well, so that matches nicely. 
