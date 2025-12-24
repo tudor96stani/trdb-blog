@@ -65,7 +65,7 @@ favicon = "img/crab.png"
 menu = [
     #{ name = "tags", url = "tags", trailing_slash = true },
     { name = "about", url = "about", trailing_slash = true },
-    { name = "rss", url = "atom.xml", trailing_slash = false },
+  #  { name = "rss", url = "atom.xml", trailing_slash = false },
     { name = "github", url = "https://github.com/tudor96stani/trdb", trailing_slash = false },
 ]
 

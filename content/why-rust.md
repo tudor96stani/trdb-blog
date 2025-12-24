@@ -2,6 +2,9 @@
 title = "Why rust"
 date = 2025-12-07T10:00:00+01:00
 description = "Why I chose Rust for the rewrite of this project"
+template = "redirect.html"
+[extra]
+to = "https://tudor96stani.com/blog/rusting-a-database/why-rust/"
 +++
 
 Since I decided to rewrite everything from scratch, I also decided to pick a different language for the new version.

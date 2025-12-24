@@ -2,6 +2,9 @@
 title = "So I decided to write a database system"
 date = 2025-12-07T09:00:00+01:00
 description = "First post, going over the reason behind this blog and giving some context."
+template = "redirect.html"
+[extra]
+to = "https://tudor96stani.com/blog/rusting-a-database/so-i-decided-to-write-a-database/"
 +++
 
 About a year ago I started a personal project to implement a relational database system from scratch, mostly as a result of (1) my interest in the field and (2) a desire to better understand how things work under the hood.
