@@ -5,9 +5,6 @@ slug = "paging-the-data"
 description = "An overview of the concept of slotted pages in a storage engine along with details on how it was implemented"
 tags = ["data-page", "slotted-page"]
 draft = false
-template = "redirect.html"
-[extra]
-to = "https://tudor96stani.com/blog/rusting-a-database/paging-the-data/"
 +++
 ## Intro
 At the foundation of any database engine is the storage layer - responsible for handling the actual persistence and retrieval of data on disk. In this post, I will go over database pages, the universally adopted abstraction for how the engine interacts with the disk. The theoretical part of the article does not propose any new design, but rather summarizes how databases typically structure and use pages. I then walk through my own implementation of database pages, which, while custom-built, follows closely the structure and behavior described in the theoretical overview.

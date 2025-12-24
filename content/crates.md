@@ -2,9 +2,6 @@
 title = "Crates"
 date = 2025-12-07T13:00:00+01:00
 description = "Organizing a project of this scale is already difficult - doing it in a new language, where you are not familiar with the idiomatic ways of structuring the project makes it even trickier"
-template = "redirect.html"
-[extra]
-to = "https://tudor96stani.com/blog/rusting-a-database/crates/"
 +++
 
 One of the things I have found relatively weird in Rust was the way you structure a (larger) project - you have crates, packages, workspaces? Coming from the .NET world with only solutions and projects, it was not super clear from the get-go how to organize this project. 
